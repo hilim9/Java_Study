@@ -32,6 +32,10 @@ public static void main(String[] args) {
       }
 }
 ```
-numOfApples/sizeOfBucket + (numOfApples%sizeOfBucket > 0 ? 1 : 0) ;
+numOfApples / sizeOfBucket + (numOfApples % sizeOfBucket > 0 ? 1 : 0) ;
+
+numOfApples / sizeOfBucket 연산을 했을 때 바구니의 수는 12가 나온다  
+하지만 3개가 남기 때문에 13개가 필요하다  
+그래서 나머지 연산자를 이용하여 나머지가 발생하는지 확인하고 1을 더해주어야 한다  
 
 ---
