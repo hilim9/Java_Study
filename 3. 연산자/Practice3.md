@@ -47,5 +47,15 @@ public static void main(String[] args) {
       System.out.println( ??? );
 }
 ```
-num == 0 ? "0" : num > 0 ? "양수" : "음수";
+num == 0 ? "0" : num > 0 ? "양수" : "음수";0
 
+---
+## 3-4
+변수 num의 값 중 백의 자리 이하를 버리는 코드
+```
+public static void main(String[] args) {
+      int num = 456;
+      System.out.println( ??? );
+}
+```
+num / 100 * 100
