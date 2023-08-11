@@ -62,4 +62,13 @@ num / 100 * 100
 
 ---
 ## 3-5
+변수의 값 중 일의 자리를 1로 바꾸는 코드
+```
+public static void main(String[] args) {
+      int num = 333;
+      System.out.println( ??? );
 
+      // 실행 결과 331
+}
+```
+num / 10 * 10 + 1
