@@ -85,3 +85,70 @@ public static void main(String[] args) {
 10 - num % 10 OR   
 (num / 10 + 1) * 10 - num
 
+---
+## 3-7
+화씨(Fahrenheit)를 섭씨(Celcius)로 변환하는 코드
+```
+public static void main(String[] args) {
+      int fahrenheit = 100;
+      float celcius = ( ??? );
+      System.out.println("Fahrenheit:"+fahrenheit);
+      System.out.println("Celcius:"+celcius);
+}
+```
+(int)((5/9f * (fahrenheit - 32))*100 + 0.5) / 100f
+
+---
+## 3-8
+실행결과를 얻기위한 코드 수정
+```
+public static void main(String[] args) {
+      byte a = 10;
+      byte b = 20;
+      byte c = a + b;               // (byte) (a + b);
+      char ch = 'A';
+      ch = ch + 2;                  // (char) (ch + 2);
+      float f = 3 / 2;              // 3 / 2f;
+      long l = 3000 * 3000 * 3000;  // 3000 * 3000 * 3000L;
+      float f2 = 0.1f;
+      double d = 0.1;
+      boolean result = d==f2;       // (float) d == f2;
+      System.out.println("c="+c);
+      System.out.println("ch="+ch);
+      System.out.println("f="+f);
+      System.out.println("l="+l);
+      System.out.println("result="+result);
+
+      // 실행 결과
+      ch=C
+      f=1.5
+      l=27000000000
+      result=true
+}
+```
+
+---
+## 3-9
+변수가 영문자(대소포함) 이거나 숫자일 때만 true값을 출력하는 코드
+```
+public static void main(String[] args) {
+      char ch = 'z';
+      boolean b = ( ??? );
+      System.out.println(b);
+}
+```
+'a' <= ch && ch <= 'z' || 'A' <= ch && ch <= 'Z' || '0' <= ch && ch <= '9'
+
+---
+## 3-10
+대문자를 소문자로 변경하는 코드   
+(저장된 문자가 대문자인 경우에만 소문자로 변경)
+```
+public static void main(String[] args) {
+      char ch = 'A';
+      char lowerCase = ( 1 ) ? ( 2 ) : ch;
+      System.out.println("ch:"+ch);
+      System.out.println("ch to lowerCase:"+lowerCase);
+}
+```
+('A' <= ch && ch <= 'Z') ? (char)(ch+32): ch
