@@ -72,3 +72,16 @@ public static void main(String[] args) {
 }
 ```
 num / 10 * 10 + 1
+
+---
+## 3-6
+변수의 값보다 크고 가장 가까운 10의 배수에서 변수의 값을 뺀 나머지를 구하는 코드
+```
+public static void main(String[] args) {
+      int num = 24;
+      System.out.println( /* (1) */ );
+}
+```
+10 - num % 10 OR   
+(num / 10 + 1) * 10 - num
+
