@@ -99,5 +99,83 @@ public static void main(String[] args) {
 ```
 
 ---
+## 4-6
+두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하는 코드
+```
+public static void main(String[] args) {
+    for(int i=1;i<=6;i++)
+    for(int j=1;j<=6;j++)
+    if(i+j==6)
+    System.out.println(i+"+"+j+"="+(i+j));
+}
+```
+
+---
+## 4-7
+Math.random()을 사용하여 1부터 6사이의 임의의 정수를 변수 value에 저장하는 코드
+```
+public static void main(String[] args) {
+    int value = ( ??? );
+    System.out.println("value:"+value);
+}
+```
+(int)(Math.random() * 6 ) + 1;
+
+---
+## 4-8
+2x+4y=10의 모든 해를 구하는 코드   
+( x와 y는 정수이고, 각각의 범위는 0<=x<=10, 0<=y<=10 )
+```
+public static void main(String[] args) {
+    for(int x=0; x <=10;x++) {
+        for(int y=0; y <=10;y++) {
+            if(2*x+4*y==10) {
+                System.out.println("x="+x+", y="+y);
+            }
+        }
+    }
+}
+```
+
+---
+## 4-9
+숫자로 이루어진 문자열 str이 있을 때, 각 자리의 합을 더한 결과를 출력하는 코드
+```
+public static void main(String[] args) {
+    String str = "12345";
+    int sum = 0;
+    for(int i=0; i < str.length(); i++) {
+       //  ???
+    }
+    System.out.println("sum="+sum);
+}
+```
+sum += str.charAt(i) - '0';
+
+---
+## 4-10
+int타입의 변수 num 이 있을 때, 각 자리의 합을 더한 결과를 출력하는 코드   
+( 문자열로 변환하지 말고 숫자로만 처리 )
+```
+public static void main(String[] args) {
+    int num = 12345;
+    int sum = 0;
+
+    // ???
+   
+    System.out.println("sum="+sum);
+}
+```
+```
+// 정답
+ while(num > 0) {
+    sum += num%10;
+    num /= 10;
+}
+```
+
+
+
+
 
 
